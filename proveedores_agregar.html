@@ -148,54 +148,53 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Proveedores</h1>
+                    <hr class="sidebar-divider">
 
-                    <form class="user">
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                    placeholder="Nombre">
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                    placeholder="Codigo">
-                            </div>
-                             <div class="col-sm-6 mt-2">
-                                <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                    placeholder="Cedula Jurídica">
-                            </div>
-                            <div class="col-sm-6 mt-2">
-                                <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                    placeholder="Telefono">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                placeholder="Correo">
-                        </div>
+                    <div class="container">
 
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                    placeholder="Frecuencia">
+                        <div class="p-1">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Registar un Proveedor</h1>
                             </div>
-                           
+                            <form class="user">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="Nombre**">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Cedula Juridica**">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Teléfono**">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Correo">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Frecuencia**">
+                                </div>
+
+                                <a class="btn btn-success btn-block" data-toggle="modal" data-target="#provModal">
+
+                                    Registar Proveedor
+                                </a>
+                                <hr>
+                            </form>
                         </div>
-                       
-                        <a href="" class="btn btn-success btn-user btn-block">
-                            Guardar Proveedor
-                        </a>
-                        <hr>
-                        
-                    </form>
+                    </div>
+                    <!-- /.container-fluid -->
 
                 </div>
-                <!-- /.container-fluid -->
-
+                <!-- End of Main Content -->
             </div>
-            <!-- End of Main Content -->
-
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -228,10 +227,32 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.
+                </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-success" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal-->
+    <div class="modal fade" id="provModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro de Proveedor</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Proveedor guardado correctamente.
+                </div>
+                <div class="modal-footer">
+
+                    <a class="btn btn-success" href="proveedores.html">Completar</a>
                 </div>
             </div>
         </div>

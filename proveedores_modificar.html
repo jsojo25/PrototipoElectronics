@@ -145,56 +145,68 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Proveedores Modificar</h1>
-
-                    <form class="user">
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                    placeholder="Nombre">
+                 <!-- Begin Page Content -->
+                 <div class="container-fluid">
+                    <div class="container-fluid">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-success">Editar información de un proveedor</h6>
                             </div>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                    placeholder="Codigo">
-                            </div>
-                             <div class="col-sm-6 mt-2">
-                                <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                    placeholder="Cedula Jurídica">
-                            </div>
-                            <div class="col-sm-6 mt-2">
-                                <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                    placeholder="Telefono">
+                            <div class="card-body">
+                                El formulario que se presenta a continuación permitirá editar la información del
+                                proveedor, pre registrado.
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                placeholder="Correo">
-                        </div>
+                    </div>
 
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                    placeholder="Frecuencia">
+                    <div class="container">
+                        <div class="p-1">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Modificar un Proveedor</h1>
                             </div>
-                           
+                            <form class="user">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="Codigo" disabled>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Cedula Jurídica">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Nombre">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Correo">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Frecuencia">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Teléfono">
+                                    </div>
+                                </div>
+                                <a class="btn btn-success btn-block" data-toggle="modal" data-target="#proveeeModal">
+
+                                    Modificar
+                                </a>
+                                <hr>
+                            </form>
+
                         </div>
-                       
-                        <a href="" class="btn btn-success btn-user btn-block">
-                            Modificar Proveedor
-                        </a>
-                        <hr>
-                        
-                    </form>
+                    </div>
 
-                </div>
-                <!-- /.container-fluid -->
-
-            </div>
-            <!-- End of Main Content -->
+                    <hr class="sidebar-divider">
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
@@ -232,6 +244,27 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-success" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Editar Modal-->
+    <div class="modal fade" id="proveeeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modificar Proveedor</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Proveedor modificado correctamente.
+                </div>
+                <div class="modal-footer">
+
+                    <a class="btn btn-success" href="proveedores.html">Completar</a>
                 </div>
             </div>
         </div>
